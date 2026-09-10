@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>@media Rule</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- You can move the styles below into color.css and keep this link: -->
+        <link rel="stylesheet" href="color-change.css">
+        
+        <style>
+            /* Default background for widths between 600px and 899px */
+            body {
+                background-color: lightyellow;
+                font-family: sans-serif;
+            }
+
+            /* When the width is 599 pixels or less */
+            @media screen and (max-width: 599px) {
+                body {
+                    background-color: lightblue;
+                }
+            }
+
+            /* When the width is 900 pixels or more */
+            @media screen and (min-width: 900px) {
+                body {
+                    background-color: lightgreen;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HW 4</h1>
+        <p>Color Web page based on size by Kimi Dean Mafazan.</p>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Reference from CSE 154: Web Programming Section3 -->
+
+<html lang="en">
+  <head>
+    <title>Number Card Demo</title>
+    <link rel="stylesheet" href="number-card.css">
+  </head>
+  <body>
+    <div class="card">
+      <img src="number-0.png" alt="Number 0 tile" />
+      <img src="number-1.png" alt="Number 1 tile" />
+      <img src="number-2.png" alt="Number 2 tile" />
+      <img src="number-3.png" alt="Number 3 tile" />
+  </body>
+</html>
+<style>
+  .card {
+    /* Dimensions and Border */
+    width: 500px;
+    height: 200px;
+    border: 0.5em solid #698733;
+    border-radius: 1em;
+    
+    /* Flexbox for layout */
+    display: flex;          
+    align-items: center;          /* Centers items vertically */
+    justify-content: space-evenly; /* Spaces items evenly horizontally */
+  }
+
+  .card img {
+    /* Image height relative to the card container */
+    height: 70%;
+  }
+</style>
